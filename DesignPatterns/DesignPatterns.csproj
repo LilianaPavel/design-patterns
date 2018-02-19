@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DesignPatterns.ObserverPattern.WeatherStation</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,6 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ObserverPattern\Observers\CurrentConditionsDisplay.cs" />
+    <Compile Include="ObserverPattern\Observers\ForecastDisplay.cs" />
+    <Compile Include="ObserverPattern\Observers\IDisplayElement.cs" />
+    <Compile Include="ObserverPattern\Observers\IObserver.cs" />
+    <Compile Include="ObserverPattern\Subject\ISubject.cs" />
+    <Compile Include="ObserverPattern\Observers\StatisticsDisplay.cs" />
+    <Compile Include="ObserverPattern\Subject\WeatherData.cs" />
+    <Compile Include="ObserverPattern\WeatherStation.cs" />
     <Compile Include="StrategyPattern\Duck\ModelDuck.cs" />
     <Compile Include="StrategyPattern\FlyBehavior\FlyRocketPowered.cs" />
     <Compile Include="StrategyPattern\MiniDuckSimulator.cs" />
@@ -60,5 +71,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
