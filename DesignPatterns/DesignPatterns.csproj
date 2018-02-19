@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DesignPatterns.ObserverPattern.WeatherStation</StartupObject>
+    <StartupObject>DesignPatterns.DecoratorPattern.StarbuzzCoffee</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,6 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DecoratorPattern\Beverage.cs" />
+    <Compile Include="DecoratorPattern\CondimentDecorator.cs" />
+    <Compile Include="DecoratorPattern\DarkRoast.cs" />
+    <Compile Include="DecoratorPattern\Espresso.cs" />
+    <Compile Include="DecoratorPattern\Milk.cs" />
+    <Compile Include="DecoratorPattern\Mocha.cs" />
+    <Compile Include="DecoratorPattern\StarbuzzCoffee.cs" />
     <Compile Include="ObserverPattern\Observers\CurrentConditionsDisplay.cs" />
     <Compile Include="ObserverPattern\Observers\ForecastDisplay.cs" />
     <Compile Include="ObserverPattern\Observers\IDisplayElement.cs" />
