@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DesignPatterns.DecoratorPattern.StarbuzzCoffee</StartupObject>
+    <StartupObject>DesignPatterns.SingletonPattern.ChocolateFactory</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -60,6 +60,8 @@
     <Compile Include="ObserverPattern\Observers\StatisticsDisplay.cs" />
     <Compile Include="ObserverPattern\Subject\WeatherData.cs" />
     <Compile Include="ObserverPattern\WeatherStation.cs" />
+    <Compile Include="SingletonPattern\ChocolateBoiler.cs" />
+    <Compile Include="SingletonPattern\ChocolateFactory.cs" />
     <Compile Include="StrategyPattern\Duck\ModelDuck.cs" />
     <Compile Include="StrategyPattern\FlyBehavior\FlyRocketPowered.cs" />
     <Compile Include="StrategyPattern\MiniDuckSimulator.cs" />
@@ -78,6 +80,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="FactoryPattern\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
