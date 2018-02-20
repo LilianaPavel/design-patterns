@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DesignPatterns.SingletonPattern.ChocolateFactory</StartupObject>
+    <StartupObject>DesignPatterns.FactoryPattern.AbstractFactory.PizzaWithIngredientsTestDrive</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,6 +52,31 @@
     <Compile Include="DecoratorPattern\Milk.cs" />
     <Compile Include="DecoratorPattern\Mocha.cs" />
     <Compile Include="DecoratorPattern\StarbuzzCoffee.cs" />
+    <Compile Include="FactoryPattern\AbstractFactory\Cheese.cs" />
+    <Compile Include="FactoryPattern\AbstractFactory\ChicagoPizzaIngredientFactory.cs" />
+    <Compile Include="FactoryPattern\AbstractFactory\CheesePizza.cs" />
+    <Compile Include="FactoryPattern\AbstractFactory\ChicagoPizzaStore.cs" />
+    <Compile Include="FactoryPattern\AbstractFactory\NYPizzaIngredientFactory.cs" />
+    <Compile Include="FactoryPattern\AbstractFactory\NYPizzaStore.cs" />
+    <Compile Include="FactoryPattern\AbstractFactory\Pizza.cs" />
+    <Compile Include="FactoryPattern\AbstractFactory\PizzaIngredientFactory.cs" />
+    <Compile Include="FactoryPattern\AbstractFactory\PizzaStore.cs" />
+    <Compile Include="FactoryPattern\AbstractFactory\PizzaWithIngredientsTestDrive.cs" />
+    <Compile Include="FactoryPattern\FactoryMethod\ChicagoCheesePizza.cs" />
+    <Compile Include="FactoryPattern\FactoryMethod\ChicagoPepperoniPizza.cs" />
+    <Compile Include="FactoryPattern\FactoryMethod\NYCheesePizza.cs" />
+    <Compile Include="FactoryPattern\FactoryMethod\NYPepperoniPizza.cs" />
+    <Compile Include="FactoryPattern\FactoryMethod\Pizza.cs" />
+    <Compile Include="FactoryPattern\FactoryMethod\PizzaStore.cs" />
+    <Compile Include="FactoryPattern\FactoryMethod\PizzaTestDrive.cs" />
+    <Compile Include="FactoryPattern\SimpleFactory\CheesePizza.cs" />
+    <Compile Include="FactoryPattern\FactoryMethod\ChicagoPizzaStore.cs" />
+    <Compile Include="FactoryPattern\FactoryMethod\NYPizzaStore.cs" />
+    <Compile Include="FactoryPattern\SimpleFactory\PepperoniPizza.cs" />
+    <Compile Include="FactoryPattern\SimpleFactory\Pizza.cs" />
+    <Compile Include="FactoryPattern\SimpleFactory\PizzaStore.cs" />
+    <Compile Include="FactoryPattern\SimpleFactory\SimplePizzaFactory.cs" />
+    <Compile Include="FactoryPattern\SimpleFactory\SimplePizzaTestDrive.cs" />
     <Compile Include="ObserverPattern\Observers\CurrentConditionsDisplay.cs" />
     <Compile Include="ObserverPattern\Observers\ForecastDisplay.cs" />
     <Compile Include="ObserverPattern\Observers\IDisplayElement.cs" />
@@ -80,8 +105,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FactoryPattern\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
